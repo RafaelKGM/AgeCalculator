@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./sass/style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+    </style>
+    
+    
+</head>
+<body>
+<main class="contenedorPrincipal">
+<div class="contenedorInputs">
+
+        <div class="contenedorLabels">
+          <label id="labelAño" label for="Year">Year</label>
+          <input type="number" name="Year" class="InputText" id="Year" placeholder="YYYY">
+        </div>
+
+        <div class="contenedorLabels">
+          <label  id="labelMes" for="month">Month</label>
+          <input type="number" name="month" class="InputText" id="month" placeholder="MM">
+        </div>
+
+        <div class="contenedorLabels">
+          <label id="labelDia"for="day">day</label>
+          <input type="number" name="day" id="day" class="InputText" placeholder="DD">
+        </div>
+  <button onclick="guardarNumero()">↓</button>
+
+  
+</div>
+<p id="noValido" class="noValido"></p>
+
+<div class="contenedorTextos">
+ <p id="LenguajeAño" ><span id="textYear" class="allText">--</span> Years</p>
+ <p id="LenguajeMes" ><span id="textMonth" class="allText">--</span> Months</p>
+ <p id="LenguajeDias"><span  id="textDay" class="allText">--</span> Days</p>
+</div>
+
+
+<button id="boton" class="boton_idioma" onclick="Idioma()">Español</button>
+</main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rafael Guarino</a>.
+  </div>
+  <script src="./js/scriptAge.js"></script>
+</body>
+</html>
